@@ -46,6 +46,14 @@
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
+		
+		// Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div1'));
+        chart.draw(data, options);
+		
+		// Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div2'));
+        chart.draw(data, options);
       }
     </script>
 
@@ -72,8 +80,24 @@
 	</div>
 </div>
 
+<div class="mdc-card">
+  <!-- ... content ... -->
+ <!--Div that will hold the pie chart-->
+    <div id="chart_div1">
+	
+	</div>
 </div>
-<div class="mdc-tab-bar" role="tablist" style="position:absolute; bottom:0;">
+
+<div class="mdc-card">
+  <!-- ... content ... -->
+ <!--Div that will hold the pie chart-->
+    <div id="chart_div2">
+	
+	</div>
+</div>
+
+</div>
+<div class="mdc-tab-bar" role="tablist" style="position:absolute; bottom:0; width:100%; display:flex; justify-content:center;">
   <div class="mdc-tab-scroller">
     <div class="mdc-tab-scroller__scroll-area">
       <div class="mdc-tab-scroller__scroll-content">
