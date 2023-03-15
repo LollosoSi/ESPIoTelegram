@@ -169,7 +169,7 @@ document.querySelector(':root').style.setProperty('--mdc-theme-primary', 'var(--
 
 onViewChange();
 
-document.getElementById('parag').innerHTML = "Ciao " + window.Telegram.WebApp.WebAppUser.username + "!";
+document.getElementById('parag').innerHTML = "Ciao " + window.Telegram.WebApp.initDataUnsafe.user.first_name + "!";
 
 function onViewChange(){
 //document.getElementById('parag').innerHTML = window.Telegram.WebApp.viewportHeight;
