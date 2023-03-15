@@ -104,7 +104,7 @@ p{
 
 </div>
 
-<div class="mdc-tab-bar" role="tablist" style="position:fixed; top:var(--tg-viewport-height-stable)-100px; left:0; width:100%; background-color:white;">
+<div id="tab-bar" class="mdc-tab-bar" role="tablist" style="position:fixed; top:0; left:0; width:100%; background-color:white;">
   <div class="mdc-tab-scroller">
     <div class="mdc-tab-scroller__scroll-area">
       <div class="mdc-tab-scroller__scroll-content">
@@ -157,7 +157,7 @@ Telegram.WebApp.onEvent('viewportChanged', onViewChange);
 
 function onViewChange(){
 document.getElementById('parag').innerHTML = window.Telegram.WebApp.viewportHeight;
-
+document.getElementById('tab-bar').top = window.Telegram.WebApp.viewportHeight-100;
 
 }
 
