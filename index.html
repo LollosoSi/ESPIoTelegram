@@ -155,6 +155,8 @@ p{
 
 Telegram.WebApp.onEvent('viewportChanged', onViewChange);
 
+document.querySelector(':root').style.setProperty('--mdc-theme-primary', 'var(--tg-theme-text-color)');
+
 function onViewChange(){
 document.getElementById('parag').innerHTML = window.Telegram.WebApp.viewportHeight;
 document.getElementById('tab-bar').top = "("+window.Telegram.WebApp.viewportHeight+"-100)px";
