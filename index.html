@@ -159,7 +159,7 @@ document.querySelector(':root').style.setProperty('--mdc-theme-primary', 'var(--
 
 function onViewChange(){
 document.getElementById('parag').innerHTML = window.Telegram.WebApp.viewportHeight;
-document.getElementById('tab-bar').style.top = (window.Telegram.WebApp.viewportHeight-document.getElementById('tab-bar').offsetWidth)+"px";
+document.getElementById('tab-bar').style.top = (window.Telegram.WebApp.viewportHeight-document.getElementById('tab-bar').height)+"px";
 
 }
 
