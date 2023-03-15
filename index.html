@@ -158,8 +158,8 @@ Telegram.WebApp.onEvent('viewportChanged', onViewChange);
 document.querySelector(':root').style.setProperty('--mdc-theme-primary', 'var(--tg-theme-hint-color)');
 
 function onViewChange(){
-document.getElementById('parag').innerHTML = window.Telegram.WebApp.viewportHeight;
-document.getElementById('tab-bar').style.top = (window.Telegram.WebApp.viewportHeight-document.getElementById('tab-bar').offsetHeight)+"px";
+document.getElementById('parag').innerHTML = window.Telegram.WebApp.viewportStableHeight;
+document.getElementById('tab-bar').style.top = (window.Telegram.WebApp.viewportStableHeight-document.getElementById('tab-bar').offsetHeight)+"px";
 
 }
 
