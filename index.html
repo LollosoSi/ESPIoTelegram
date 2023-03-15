@@ -11,8 +11,6 @@
 
 </style>
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
 <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -73,7 +71,6 @@
 	
 	</div>
 </div>
-<div id="map"></div>
 
 </div>
 <div class="mdc-tab-bar" role="tablist" style="position:absolute; bottom:0;">
@@ -133,46 +130,7 @@
 </div>
 
 
-
-
-<!-- Please note, public google api included for test purposes only, this is not intended as public release. We still have no way to hide the API key when using github pages -->
-<script
-      src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script>
 </body>
 
 
-<script>
-function initMap() {
-  // The location of rome, paris and naples
-  const rome = { lat: 41.902782, lng: 12.496366 };
-  const paris = { lat: 48.864716, lng: 2.349014 };
-  const naples = { lat: 40.853294, lng: 14.305573 };
-  
-  // The map, centered at rome
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: rome,
-  });
-  // The marker, positioned at rome
-  const marker = new google.maps.Marker({
-    position: rome,
-    map: map,
-  });
-  
-  const marker2 = new google.maps.Marker({
-    position: paris,
-    map: map,
-  });
-  
-  const marker3 = new google.maps.Marker({
-    position: naples,
-    map: map,
-  });
-}
-
-window.initMap = initMap;
-
-</script>
 </html>
