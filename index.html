@@ -155,7 +155,7 @@ p{
 
 Telegram.WebApp.onEvent('viewportChanged', onViewChange);
 
-document.querySelector(':root').style.setProperty('--mdc-theme-primary', 'var(--tg-theme-text-color)');
+document.querySelector(':root').style.setProperty('--mdc-theme-primary', 'var(--tg-theme-hint-color)');
 
 function onViewChange(){
 document.getElementById('parag').innerHTML = window.Telegram.WebApp.viewportHeight;
