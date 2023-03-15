@@ -153,7 +153,7 @@ text-color: var(--mdc-theme-primary);
 
 <script>
 
-Telegram.WebApp.onEvent(viewportChanged, onViewChange);
+Telegram.WebApp.onEvent('viewportChanged', onViewChange);
 
 function onViewChange(){
 document.getElementById('parag').innerHTML = window.Telegram.WebApp.viewportStableHeight;
