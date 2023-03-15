@@ -13,11 +13,11 @@ p{
 }
 
 .translate{
--webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+-webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 
 }
 
@@ -166,6 +166,8 @@ Telegram.WebApp.onEvent('viewportChanged', onViewChange);
 window.Telegram.WebApp.enableClosingConfirmation();
 
 document.querySelector(':root').style.setProperty('--mdc-theme-primary', 'var(--tg-theme-hint-color)');
+
+onViewChange();
 
 function onViewChange(){
 document.getElementById('parag').innerHTML = window.Telegram.WebApp.viewportHeight;
