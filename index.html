@@ -154,6 +154,7 @@ p{
 <script>
 
 Telegram.WebApp.onEvent('viewportChanged', onViewChange);
+window.Telegram.WebApp.enableClosingConfirmation();
 
 document.querySelector(':root').style.setProperty('--mdc-theme-primary', 'var(--tg-theme-hint-color)');
 
