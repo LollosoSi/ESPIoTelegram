@@ -12,6 +12,15 @@ p{
 	color: var(--mdc-theme-primary);
 }
 
+.translate{
+-webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+
+}
+
 </style>
 
 <!--Load the AJAX API-->
@@ -104,7 +113,7 @@ p{
 
 </div>
 
-<div id="tab-bar" class="mdc-tab-bar" role="tablist" style="position:fixed; top:0; left:0; width:100%; background-color:white;">
+<div id="tab-bar" class="mdc-tab-bar translate" role="tablist" style="position:fixed; top:0; left:0; width:100%; background-color:white;">
   <div class="mdc-tab-scroller">
     <div class="mdc-tab-scroller__scroll-area">
       <div class="mdc-tab-scroller__scroll-content">
