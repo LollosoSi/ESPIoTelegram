@@ -5,20 +5,19 @@
 <style>
 
 :root {
-  --mdc-theme-primary: var(--tg-theme-text-color);
+  --mdc-theme-primary: var(--tg-theme-button-color);
 }
 
-p{
-	color: var(--mdc-theme-primary);
+p, mdc-tab__text-label{
+	color: var(--tg-theme-text-color);
 }
 
 .translate{
--webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -ms-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-  transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+-webkit-transition: 0.12s;
+  -moz-transition: 0.12s;
+  -ms-transition: 0.12s;
+  -o-transition: 0.12s;
+  transition: 0.12s;
 
 }
 
@@ -111,7 +110,7 @@ p{
 
 </div>
 
-<div id="tab-bar" class="mdc-tab-bar translate" role="tablist" style="position:fixed; top:0; left:0; width:100%; display:flex; justify-content:space-evenly; background-color:white;">
+<div id="tab-bar" class="mdc-tab-bar translate" role="tablist" style="position:fixed; top:0; left:0; width:100%; display:flex; justify-content:space-evenly; background-color:var(--tg-theme-bg-color);">
   <div class="mdc-tab-scroller">
     <div class="mdc-tab-scroller__scroll-area">
       <div class="mdc-tab-scroller__scroll-content">
