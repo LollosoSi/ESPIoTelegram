@@ -4,6 +4,21 @@
 <head>
 <style>
 
+
+
+.mdc-tab {
+
+--mdc-theme-primary: #0F00F0;
+
+}
+
+:root, .mdc-tab--active {
+
+--mdc-theme-primary: #00FF00;
+--mdc-theme-text-secondary-on-light: #0000FF;
+
+}
+
 p{
 	color: var(--tg-theme-text-color);
 }
@@ -106,7 +121,7 @@ p{
 
 </div>
 
-<div id="tab-bar" class="mdc-tab-bar translate" role="tablist" style="position:fixed; top:0; left:0; width:100%; display:flex; justify-content:space-evenly; ">
+<div id="tab-bar" class="mdc-tab-bar translate" role="tablist" style="position:fixed; top:0; left:0; width:100%; display:flex; justify-content:space-evenly; background-color:#539957;">
   <div class="mdc-tab-scroller">
     <div class="mdc-tab-scroller__scroll-area">
       <div class="mdc-tab-scroller__scroll-content">
@@ -123,7 +138,7 @@ p{
           <span class="mdc-tab__ripple"></span>
         </button>
 		
-		<button class="mdc-tab" role="tab" aria-selected="false" tabindex="1">
+		<button class="mdc-tab" role="tab" aria-selected="true" tabindex="1">
           <span class="mdc-tab__content">
             <span class="mdc-tab__icon material-icons" aria-hidden="true">pie_chart</span>
             <span class="mdc-tab__text-label">Progetto</span>
@@ -134,7 +149,7 @@ p{
           <span class="mdc-tab__ripple"></span>
         </button>
 		
-		<button class="mdc-tab" role="tab" aria-selected="false" tabindex="2">
+		<button class="mdc-tab" role="tab" aria-selected="true" tabindex="2">
           <span class="mdc-tab__content">
             <span class="mdc-tab__icon material-icons" aria-hidden="true">group</span>
             <span class="mdc-tab__text-label">Il Team</span>
